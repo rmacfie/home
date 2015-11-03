@@ -1,0 +1,196 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Base Css
+    -----------------------------------------------------  */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #333;
+}
+
+a {
+    color: #04d;
+}
+
+a:hover {
+    color: #028;
+}
+
+h1, h2, h3, strong, b {
+    font-weight: 700;
+}
+
+h1, h2, h3, p, ul, ol, dl {
+    margin: 0 0 16px 0;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+ul {
+    padding: 0 0 0 2em;
+    list-style: disc;
+}
+
+li {
+    margin: 2px 0;
+    padding: 0 0 0 0.33em;
+}
+
+dl {
+    padding: 0 0 0 1em;
+}
+
+dl dt {
+    float: left;
+    clear: left;
+    margin: 0 0.5em 0.5em 0;
+    font-weight: bold;
+}
+
+dl dd {
+    margin: 0 0 8px 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    margin: 1.5em 0;
+    padding: 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+
+/* Layout Css
+    -----------------------------------------------------  */
+
+body {
+    padding: 10px;
+    background: #f0f2f5 url(irene-background.png);
+}
+
+header, div#main, footer {
+    width: 620px;
+    margin: 32px auto;
+}
+
+header {
+    color: #3d4b66;
+}
+
+footer {
+    width: 588px;
+    padding: 0 16px;
+    font-size: 12px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+article {
+    margin: 16px 0;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #dfdedb;
+    border-top: none;
+    border-left: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+h1 {
+    font-family: Norican, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+}
+
+ul#attributes {
+    font-weight: 400;
+    font-size: 19px;
+    list-style-type: circle;
+}
+
+ul#attributes li {
+    margin: 6px 0;
+}
+
+ul#attributes span {
+    padding: 0 0.2em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.7);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bbffffff", endColorstr="#bbffffff");
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#bbffffff, endColorstr=#bbffffff)";
+}
+
+dl#contact {
+    margin-top: 2em;
+}
+
+dl#contact dt {
+    width: 128px;
+    text-align: right;
+}
+
+img#portrait {
+    float: right;
+    margin: 0 0 16px 16px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}

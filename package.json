@@ -1,0 +1,12 @@
+{
+  "name": "home",
+  "version": "2.0.0",
+  "dependencies": {
+    "express": "^4.13.3",
+    "morgan": "^1.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  }
+}
