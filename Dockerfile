@@ -7,5 +7,8 @@ WORKDIR /app
 RUN npm install
 COPY . /app
 
-EXPOSE 8080
+ENV PORT 5000
+ENV NODE_ENV Production
+
+EXPOSE 5000
 ENTRYPOINT node server.js
