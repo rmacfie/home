@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Robert Macfie</title>
   <meta name="description" content="Robert Macfie, robert@macfie.se, +46 704 221644">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700">
+  <link rel="shortcut icon" href="robert.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700|Lato:400,700">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <style>
     html, body {
@@ -17,75 +19,104 @@
       outline: 0;
     }
 
-    html {
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-    }
-
-    .wrap1 {
-      height: 100%;
-      width: 100%;
+    .wrap {
       display: table;
+      height: 100%;
+      width: 240px;
+      margin: 0 auto;
+      padding: 20px 30px 20px 90px;
     }
 
-    .wrap2 {
+    .wrap-inner {
       display: table-cell;
       vertical-align: middle;
     }
 
-    article {
+    header, article {
       display: block;
-      max-width: 22em;
-      margin: 0 auto;
-      padding: 1em;
+      margin: 30px 0;
+      clear: both;
+    }
+
+    html {
+      font: 15px/1.5 Lato, Arial, sans-serif;
+      color: #333;
     }
 
     h1 {
+      position: relative;
+      margin: 0 0 0 -1px;
       font-family: Raleway, Arial, sans-serif;
-      font-size: 2em;
+      font-size: 26px;
     }
 
-    dl {
+    h1 img {
+      position: absolute;
+      left: -75px;
+      height: 60px;
+      width: 60px;
+    }
+
+    h1 small {
+      display: block;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 16px;
+      text-transform: uppercase;
+    }
+
+    ul {
+      list-style: none;
       margin: 0;
       padding: 0;
     }
 
-    dt {
-      display: block;
-      float: left;
-      width: 5em;
-      padding: 0.25em 0;
-      text-align: right;
-      color: #777;
+    li {
+      margin: 0;
+      padding: 0;
     }
 
-    dd {
-      display: block;
-      margin-left: 6em;
-      padding: 0.25em 0;
+    p {
+      margin: 0 0 10px 0;
+    }
+
+    p b {
+      display: none;;
+      margin-right: 5px;
+    }
+
+    p .fa {
+      display: inline-block;
+      width: 16px;
+      margin-right: 6px;
+      text-align: center;
+      font-size: 0.85em;
+      color: #555;
+    }
+
+    p .fa-envelope-o {
+      font-size: 0.75em;
     }
   </style>
 
 </head>
 <body>
 
-  <div class="wrap1">
-    <div class="wrap2">
+  <div class="wrap">
+    <div class="wrap-inner">
+      <header>
+        <h1><img src="robert.png" alt=""> Robert Macfie <small>Software developer</small></h1>
+      </header>
       <article>
-        <h1>Robert Macfie</h1>
-        <dl>
-          <dt>Location</dt>
-          <dd>Stockholm, Sweden</dd>
-          <dt>Email</dt>
-          <dd><a href="mailto:robert@macfie.se">robert@macfie.se</a></dd>
-          <dt>Phone</dt>
-          <dd>+46 704 221644</dd>
-          <dt>&nbsp;</dt>
-          <dd><a href="http://se.linkedin.com/in/rmacfie">se.linkedin.com/in/rmacfie</a></dd>
-          <dt>&nbsp;</dt>
-          <dd><a href="https://github.com/rmacfie">github.com/rmacfie</a></dd>
-        </dl>
+        <p>
+          <i class="fa fa-location-arrow"></i> Stockholm, Sweden<br>
+          <i class="fa fa-envelope-o"></i> <a href="mailto:robert@macfie.se">robert@macfie.se</a><br>
+          <i class="fa fa-phone"></i> +46 704 221644
+        </p>
+        <p>
+          <i class="fa fa-linkedin-square"></i> <a href="http://se.linkedin.com/in/rmacfie">linkedin.com/in/rmacfie</a><br>
+          <i class="fa fa-github-square"></i> <a href="https://github.com/rmacfie">github.com/rmacfie</a>
+        </p>
       </article>
     </div>
   </div>

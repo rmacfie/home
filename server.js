@@ -18,14 +18,15 @@ app.get("/", function (req, res, next) {
     res.sendFile(path.join(publicDir, "robert.html"));
   } else if (req.hostname == "irene.macfie.se") {
     res.sendFile(path.join(publicDir, "irene.html"));
-  } else if (req.hostname == "macfie.se" || req.hostname == "www.macfie.se") {
-    res.redirect("http://robert.macfie.se");
   } else {
-    next();
+    res.redirect("http://robert.macfie.se");
   }
 });
 
 var server = app.listen(port, function () {
-  console.log("listening on port %s.", server.address().port);
-  console.log("debug mode: %s.", debugMode);
+  console.log("----------------------------------");
+  console.log("### macfie/home");
+  console.log("  = port: %s", server.address().port);
+  console.log("  = debug: %s", debugMode);
+  console.log("----------------------------------");
 });
