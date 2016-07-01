@@ -7,7 +7,6 @@ WORKDIR /app
 RUN npm install
 COPY . /app
 
-ENV PORT 5000
 ENV NODE_ENV Production
 
 EXPOSE 5000

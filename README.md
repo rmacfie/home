@@ -4,5 +4,5 @@ Commands:
     docker build -t rmacfie:dev .
 
     # run locally
-    docker run -p 8080:8080 rmacfie:dev
+    docker run -p 5000:5000 rmacfie:dev
 
