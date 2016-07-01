@@ -8,6 +8,7 @@ RUN npm install
 COPY . /app
 
 ENV NODE_ENV Production
+ENV PORT 80
 
-EXPOSE 5000
+EXPOSE 80
 ENTRYPOINT node server.js
