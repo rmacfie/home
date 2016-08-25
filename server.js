@@ -19,7 +19,7 @@ app.get("/", function (req, res, next) {
   } else if (req.hostname == "irene.macfie.se") {
     res.sendFile(path.join(publicDir, "irene.html"));
   } else {
-    res.redirect("http://robert.macfie.se");
+    res.redirect(301, "https://robert.macfie.se");
   }
 });
 
