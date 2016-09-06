@@ -11,7 +11,7 @@ var publicDir = path.join(__dirname, "public");
 var app = express();
 
 app.use(morgan("dev"));
-app.use(express.static(publicDir));
+app.use(express.static(publicDir, { maxAge: 60 * 60 * 24 * 365 }));
 
 app.get("/", function (req, res, next) {
   if (req.hostname == "robert.macfie.se") {
