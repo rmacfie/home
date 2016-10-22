@@ -10,7 +10,12 @@ var publicDir = path.join(__dirname, "public");
 
 var app = express();
 
-app.use(morgan("dev"));
+app.use(morgan("tiny", {
+  skip: function (req, res) {
+    return req.url == "/health";
+  }
+}));
+
 app.use(express.static(publicDir, { maxAge: 60 * 60 * 24 * 365 }));
 
 app.get("/", function (req, res, next) {
@@ -21,6 +26,10 @@ app.get("/", function (req, res, next) {
   } else {
     res.redirect(301, "https://robert.macfie.se");
   }
+});
+
+app.get("/health", function (req, res, next) {
+  res.send("OK");
 });
 
 var server = app.listen(port, function () {
