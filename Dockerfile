@@ -1,4 +1,4 @@
-FROM node:slim
+FROM mhart/alpine-node:6.9.1
 
 MAINTAINER Robert Macfie <robert@macfie.se>
 
